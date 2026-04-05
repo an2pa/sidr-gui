@@ -4,13 +4,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, tap } from 'rxjs';
 import { AuthenticationRequest, AuthenticationResponse, RegisterRequest } from '../models/auth.model';
 
+import { environment } from '../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   private readonly http = inject(HttpClient);
   private readonly platformId = inject(PLATFORM_ID);
-  private readonly apiUrl = 'http://localhost:8080/api/v1/auth';
+  private readonly apiUrl = `${environment.baseUrl}/api/v1/auth`;
 
   private readonly TOKEN_KEY = 'auth_token';
   isAuthenticated = signal<boolean>(this.hasToken());
