@@ -16,15 +16,11 @@ import { AuthService } from '../../services/auth.service';
         <a routerLink="/" class="text-2xl font-serif font-bold tracking-[0.2em] text-[#111111]">SIDR<span class="text-[#D4AF37]">.</span></a>
         
         <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.4em] font-bold text-[#111111]/60">
-          <a href="#" class="hover:text-[#D4AF37] transition-all duration-300 relative group">
+          <a href="/#katalog" class="hover:text-[#D4AF37] transition-all duration-300 relative group">
             Katalog
             <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#D4AF37] group-hover:w-full transition-all duration-300"></span>
           </a>
-          <a href="#" class="hover:text-[#D4AF37] transition-all duration-300 relative group">
-            Rituali
-            <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#D4AF37] group-hover:w-full transition-all duration-300"></span>
-          </a>
-          <a href="#" class="hover:text-[#D4AF37] transition-all duration-300 relative group">
+          <a href="/#o-nama" class="hover:text-[#D4AF37] transition-all duration-300 relative group">
             O Nama
             <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#D4AF37] group-hover:w-full transition-all duration-300"></span>
           </a>
